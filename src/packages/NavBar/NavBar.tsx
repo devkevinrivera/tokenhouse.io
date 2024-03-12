@@ -1,5 +1,6 @@
 import { navigation_items } from "@/constants/navigation";
 import { NavigationItem } from "@/types/common";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -9,13 +10,13 @@ const NavBar = () => {
   return (
     <section className="navbar w-53 h-[100vh] relative">
       <div className="flex justify-center mb-[4.5rem]">
-        <img
+        <Image
           src="/logo.png"
           onClick={() => console.log("clickk")}
           className={
             expanded ? "w-[90px] h-[95px] mt-10" : "w-[50px] h-[55px] mt-10"
           }
-          alt=""
+          alt="Logo TokenHouse"
         />
       </div>
       <div className="flex pl-4 py-2 pr-2 mb-[2rem] bg-[#17212e] mx-2 rounded-lg cursor-pointer">
@@ -33,13 +34,14 @@ const NavBar = () => {
         <nav>
           {navigation_items.map((item: NavigationItem, key: number) => (
             <div
+              key={key}
               className={
                 expanded ? `flex items-center mb-4` : `flex justify-center mb-4`
               }
             >
-              <img
+              <Image
+                alt={item.title}
                 src={"/" + item.icon}
-                alt={item.icon}
                 className="mr-3 cursor-pointer"
               />
               {expanded && (
