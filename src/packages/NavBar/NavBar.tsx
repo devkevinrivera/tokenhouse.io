@@ -10,9 +10,11 @@ const NavBar = () => {
   return (
     <section className="navbar w-53 h-[100vh] relative">
       <div className="flex justify-center mb-[4.5rem]">
-        <Image
+        <img
           src="/logo.png"
           onClick={() => console.log("clickk")}
+          width={90}
+          height={55}
           className={
             expanded ? "w-[90px] h-[95px] mt-10" : "w-[50px] h-[55px] mt-10"
           }
@@ -39,19 +41,17 @@ const NavBar = () => {
                 expanded ? `flex items-center mb-4` : `flex justify-center mb-4`
               }
             >
-              <Image
-                alt={item.title}
-                src={"/" + item.icon}
-                className="mr-3 cursor-pointer"
-              />
-              {expanded && (
-                <Link
-                  className=" hover:text-[#fbc02d] cursor-pointer font-bold"
-                  href={item.url}
-                >
-                  <p>{item.title}</p>
-                </Link>
-              )}
+              <Link
+                className=" hover:text-[#fbc02d] cursor-pointer font-bold flex"
+                href={item.url}
+              >
+                <img
+                  alt={item.title}
+                  src={"/" + item.icon}
+                  className="mr-3 cursor-pointer"
+                />
+                {expanded && <p>{item.title}</p>}
+              </Link>
             </div>
           ))}
         </nav>
