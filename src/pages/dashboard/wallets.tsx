@@ -1,4 +1,5 @@
 import NavBar from "@/packages/NavBar/NavBar";
+import NavHeader from "@/packages/NavHeader/NavHeader";
 import React from "react";
 
 const Wallets = () => {
@@ -7,7 +8,9 @@ const Wallets = () => {
       <aside className="app-navigation">
         <NavBar />
       </aside>
-      <div className="app-content">CONTENT</div>
+      <div className="app-content w-full">
+        <NavHeader location="Wallets" />
+      </div>
     </div>
   );
 };

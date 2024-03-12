@@ -8,13 +8,10 @@ const NavBar = () => {
   const [expanded, setExpanded] = useState(true);
 
   return (
-    <section className="navbar w-53 h-[100vh] relative">
+    <section className="navbar w-55 h-[100vh] relative">
       <div className="flex justify-center mb-[4.5rem]">
         <img
           src="/logo.png"
-          onClick={() => console.log("clickk")}
-          width={90}
-          height={55}
           className={
             expanded ? "w-[90px] h-[95px] mt-10" : "w-[50px] h-[55px] mt-10"
           }
