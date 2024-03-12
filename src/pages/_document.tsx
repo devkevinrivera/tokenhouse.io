@@ -1,5 +1,13 @@
-import Layout from "../../packages/Layout/Layout";
+import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
-  return <Layout />;
+  return (
+    <Html lang="en">
+      <Head />
+      <body>
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
+  );
 }

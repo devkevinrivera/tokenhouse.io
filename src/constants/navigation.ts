@@ -3,37 +3,37 @@ import { NavigationItem } from "@/types/common";
 export const navigation_items: NavigationItem[] = [
   {
     title: "Dashboard",
-    url: "",
+    url: "/dashboard/",
     icon: "dashboard.svg",
   },
   {
     title: "Inmuebles",
-    url: "",
+    url: "/dashboard/properties",
     icon: "inmueble.svg",
   },
   {
     title: "Marketplace",
-    url: "",
+    url: "/dashboard/marketplace",
     icon: "marketplace.svg",
   },
   {
     title: "Wallets",
-    url: "",
+    url: "/dashboard/wallets",
     icon: "wallet.svg",
   },
   {
     title: "Dapp",
-    url: "",
+    url: "/dashboard/dapp",
     icon: "dapp.svg",
   },
   {
     title: "Configuración",
-    url: "",
+    url: "/dashboard/configuration",
     icon: "configuration.svg",
   },
   {
     title: "Cerrar Sesión",
-    url: "",
+    url: "/dashboard/signout",
     icon: "signout.svg",
   },
 ];
