@@ -25,7 +25,7 @@ body {
 }
 
 .bg-signin {
-  background-image: url("/background.jpg");
+  background-image: url("/background.jpeg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
