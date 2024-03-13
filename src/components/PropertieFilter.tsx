@@ -1,5 +1,7 @@
+import { basicFilters, statusPropertiesOptions } from "@/constants/properties";
 import { properties } from "@/mocks/properties";
 import React from "react";
+import Select from "react-select";
 
 const PropertieFilter = () => {
   return (
@@ -9,17 +11,11 @@ const PropertieFilter = () => {
       </p>
       <div className="flex gap-4">
         <input
-          className="w-[20rem] px-4 py-2 rounded-3xl text-[#17212e]"
+          className="w-[20rem] px-4 py-2 rounded-md text-[#17212e]"
           placeholder="Buscar"
         />
-        <select className="w-[12rem] px-4 py-2 rounded-3xl text-[#17212e]">
-          <option>Mostrar todos</option>
-          <option>Proximamente</option>
-        </select>
-        <select className="w-[12rem] px-4 py-2 rounded-3xl text-[#17212e]">
-          <option>Mostrar todos</option>
-          <option>Proximamente</option>
-        </select>
+        <Select placeholder="Mostrar todos" options={statusPropertiesOptions} />
+        <Select placeholder="Fecha" options={basicFilters} />
       </div>
     </section>
   );

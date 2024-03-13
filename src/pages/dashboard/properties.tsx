@@ -12,6 +12,11 @@ const Properties = () => {
       <div className="app-content w-full">
         <NavHeader location="Propiedades" />
         <PropertiesGrid />
+        <div className="pt-2 w-full text-right pr-[4rem]">
+          <p className="text-white text-xs">
+            © 2024 TokenHouse with❤️from SPAIN
+          </p>
+        </div>
       </div>
     </div>
   );
