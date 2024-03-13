@@ -19,3 +19,7 @@ body {
 .navbar {
   background-color: var(--primary-bg-color) !important;
 }
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}

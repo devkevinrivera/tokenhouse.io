@@ -1,6 +1,5 @@
 import { navigation_items } from "@/constants/navigation";
 import { NavigationItem } from "@/types/common";
-import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -18,7 +17,11 @@ const NavBar = () => {
           alt="Logo TokenHouse"
         />
       </div>
-      <div className="flex pl-4 py-2 pr-2 mb-[2rem] bg-[#17212e] mx-2 rounded-lg cursor-pointer">
+      <div
+        className={`flex pl-4 py-2 pr-2 mb-[2rem] bg-[#17212e] mx-2 rounded-lg cursor-pointer ${
+          !expanded && "h-[3.5rem]"
+        }`}
+      >
         <div className="mr-2 w-[40px] flex justify-center items-center rounded-full bg-slate-500">
           KR
         </div>

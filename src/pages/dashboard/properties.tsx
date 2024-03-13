@@ -1,3 +1,4 @@
+import PropertiesGrid from "@/components/PropertiesGrid";
 import NavBar from "@/packages/NavBar/NavBar";
 import NavHeader from "@/packages/NavHeader/NavHeader";
 import React from "react";
@@ -10,6 +11,7 @@ const Properties = () => {
       </aside>
       <div className="app-content w-full">
         <NavHeader location="Propiedades" />
+        <PropertiesGrid />
       </div>
     </div>
   );
